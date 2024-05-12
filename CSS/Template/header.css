@@ -1,0 +1,142 @@
+/*
+======================
+Default Configuration
+======================
+*/
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: OR;
+  font-weight: 400;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --secondary-color: #000000;
+  --button-color: #96b2db;
+  --button-hover-color: #7da6e0;
+  --container-color: #e4efff;
+
+  --font-R: OR;
+  --font-I: OI;
+
+  --font-big-3: 2rem;
+  --font-big-2: 1.7rem;
+  --font-big-1: 1.4rem;
+  --font-big-0: 1.2rem;
+  --font-regular: 1.1rem;
+  --padding-small: 2rem;
+  --padding-1: 1rem 7%;
+  --padding-2: 1rem 10%;
+}
+
+[data-theme="dark"] {
+  --bg-color: #232020;
+  --secondary-color: #ffffff;
+  --button-color: #508de9;
+  --button-hover-color: #8196b4;
+  --container-color: #44474d;
+}
+
+.DF {
+  display: flex;
+}
+
+.FD-R {
+  flex-direction: row;
+}
+
+.FD-C {
+  flex-direction: column;
+}
+
+.DG {
+  display: grid;
+}
+
+.PR {
+  position: relative;
+}
+
+.show-flex {
+  display: flex;
+}
+
+.show-grid {
+  display: grid;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding: var(--padding-1);
+}
+
+/*
+===============
+Header Section
+===============
+*/
+header .wide-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*
+===============
+Wide Search Bar
+===============
+*/
+.wide-header-items-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wide-search-form {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.wide-search-form button {
+  display: flex;
+  padding: 0.5rem;
+  border: 0;
+  outline: 0;
+  z-index: 1;
+}
+
+.wide-search-form input {
+  position: absolute;
+  right: 0;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid;
+  height: 30px;
+  padding: 0.2rem 1rem;
+  width: 0;
+  transition: width 0.3s ease;
+  transform: translateX(-5px);
+}
+
+.wide-search-form:focus-within input {
+  width: 170px;
+  transition: width 0.3s ease;
+}
