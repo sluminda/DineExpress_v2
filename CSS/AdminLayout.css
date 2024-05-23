@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+body h1 {
+  color: #1a1a1a;
+}
+body figcaption {
+  display: flex;
+}
+body img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=AdminLayout.css.map */
